@@ -1,0 +1,11 @@
+GET /api/users
+POST /api/users
+GET /api/users/{user}
+PUT /api/users/{user}
+DELETE /api/users/{user}
+
+GET /api/users/{user}/posts
+POST /api/users/{user}/posts
+GET /api/users/{user}/posts/{post}
+PUT /api/users/{user}/posts/{post}
+DELETE /api/users/{user}/posts/{post}
