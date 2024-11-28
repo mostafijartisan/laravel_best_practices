@@ -21,7 +21,7 @@ class PostController extends Controller
 
     public function index(User $user, Request $request)
     {
-        $posts = $this->postService->getUserPosts($user, $request->all());
+        $posts = $this->postService->getUserPosts($user, $request->all()); // validated - need to implement
         return response()->json($posts);
     }
 

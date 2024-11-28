@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProductController;
 
 // Basic API routes for users
 Route::apiResource('users', UserController::class);
@@ -21,3 +22,5 @@ Route::apiResource('users.posts', PostController::class);
 // GET /api/users/{user}/posts/{post}
 // PUT /api/users/{user}/posts/{post}
 // DELETE /api/users/{user}/posts/{post}
+
+Route::apiResource('products',  ProductController::class);

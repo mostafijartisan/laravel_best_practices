@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Product;
+
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -21,8 +23,12 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         User::factory()
-            ->count(200)
-            ->hasPosts(2000) // creates 1000 posts per user
+            ->count(1)
+            ->hasPosts(1) // creates 1000 posts per user
+            ->create();
+
+        Product::factory()
+            ->count(20000)
             ->create();
     }
 }

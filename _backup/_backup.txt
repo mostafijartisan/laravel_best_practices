@@ -1,0 +1,11 @@
+https://www.php.net/manual/en/control-structures.match.php
+
+https://obsidian.md/download
+
+
+"repositories": [
+    {
+        "type": "path",
+        "url": "packages/whereFilter"
+    }
+]
